@@ -15,16 +15,17 @@
   }
   .ex1 {
     font-family: Calibri, sans-serif;
-    margin-left: 800px;
+    text-align: center;
   }
   .heading {
-    margin-left: 1000px;
+    margin-left: 700px;
   }
   .mainheading {
     font-size: smaller;
   }
   .image {
-    margin-left: 700px
+    margin-left: 700px;
+    text-align: center;
   }
     </style>
 
@@ -40,13 +41,14 @@
 <div class = "image">
 <img src="WebBanner2023.png" alt="Banner" width="900" height="300">
 </div>
-  <div class = "mainheading"
+  <div class = "mainheading">
   <h1><b>ENG0018 Computer Laboratory 2025-2026</b></h1>
   <h2>Student URN: 6953461</h2>
   </div>
   
+  
   <hr>
-<h2 style="font-family:calibri;"><b>Conference Idea: AI systems in Healthcare</b></h2>
+<h2 style="font-family:calibri;"><b>Conference Project: What are the limitations of CNN approaches in MRI-based brain diagnosis?</b></h2>
 <hr>
   
 <hr>
@@ -115,47 +117,59 @@
     </div>
   <pre>
 
-    2 - Discussion
-    2.1 Scarcity of data
+    <b>2.1 Scarcity of data</b>
+    
     CNNs need training data to learn from examples and scenarios in order to improve their ability to make predictions on new and unseen data. Through analysing a large set of labeled images 
     (in which case is known as a trained dataset), the network recognises general patterns in new images it has never encountered before. An MRI review from the National Library of Medicine states that 
     ‘the success of the ML and DL models is highly dependent on the training data’s quality, quantity and relevance’(Dorfner et al., 2025). 
 
+    <hr></hr>
+    
     <div class = "image">
     <img src="table1.png" alt="Banner" width="600" height="300">
     </div>
-    
-    <b><em>'Table 1, (Gao et al., 2022) [Test Set Evaluation of Deep Learning System], Jama Network Open'</em></b>
 
+    <hr></hr>
+
+    <div class = "mainheading">
+    <b><em>'Table 1, (Gao et al., 2022) [Test Set Evaluation of Deep Learning System], Jama Network Open'</em></b>
+    </div>
+    
     This study shows several limitations. The table only has training data obtained from a single centre, meaning it lacks external validation from other hospitals. The number of rare tumours was 
     relatively lower in the training data set which might have caused some bias in the model’s performance. For example, in unseen data sets, most of its decisions will be based on the observations recorded
     in the training data set. Using other MRI views and adding more patient information could help improve its accuracy. In the future, this system could also be developed to assist with treatment planning 
     and predicting patient outcomes.
 
-    2.2 Model Interpretability and clinical trust
+    <b>2.2 Model Interpretability and clinical trust</b>
+      
     There are two main ways in which neural networks make decisions in medical imaging. The first uses attribution-based methods which are flexible with any model. They help show which parts of an MRI/CT image have 
     influenced the model’s prediction and classification. For example, if a neural network predicts that a scan shows a tumour, specific regions of the image are highlighted which contributed to the decision.
     An importance value is assigned to each region of pixels. Red or warm colours show pixels that strongly support the model’s decision whereas blue or cool colours show pixels that oppose or decrease confidence 
     in the prediction. This is shown in Figure 1;
 
+    <hr></hr>
+
     <div class = "image">
     <img src="fig1.png" alt="Banner" width="600" height="300">
     </div>
-    <b><em>'Figure 1, (Huff, Weisman and Jeraj, 2021) [Interpretation and Visualisation Techniques for Deep Learning Models in Medical Imaging], National Library of Medicine'</em></b>
 
+    <hr></hr>
+
+    <div class = "mainheading">
+    <b><em>'Figure 1, (Huff, Weisman and Jeraj, 2021) [Interpretation and Visualisation Techniques for Deep Learning Models in Medical Imaging], National Library of Medicine'</em></b>
+    </div>
+    
     CNNs have proved to be very effective for a variety of medical diagnostic tasks, even sometimes outperforming healthcare professionals. However, the black-box nature has dulled their clinical use. 
     The black box nature of AI refers to systems that have hidden internal decision making processes which are difficult to understand. This raises concerns about trust, fairness and accountability. 
-    A peer-reviewed Journal of Imaging stresses that a medical diagnosis system needs to be ‘transparent, understandable and explainable to gain the trust of physicians, regulators and most importantly patients’(Singh, Sengupta and Lakshminarayanan, 2020)
+    A peer-reviewed Journal of Imaging stresses that a medical diagnosis system needs to be ‘transparent, understandable and explainable to gain the trust of physicians, regulators and most importantly patients’
+    (Singh, Sengupta and Lakshminarayanan, 2020)
 
-    2.3 Poor Generalisation
+    <b>2.3 Poor Generalisation</b>
+    
     Several studies have shown that CNNs tend to perform well on one dataset from one hospital, but as soon as sites are exchanged they perform much worse when tested on new data from a different hospital. More caution should be overlooked on small, private datasets as 
     ‘they fail to generalise beyond a single institution or MRI scanner’(Dorfner et al., 2025). This results in unintended bias or spontaneous correlation in the training data. The performance of the model ‘declines dramatically when directly applied to samples from 
     another unknown hospital’(Lu et al., 2022).
     Poor generalisation typically arises because the model is trained on a limited domain without the full representation of the clinical variability, lacking rigorous external validation. 
-
-
-    
-
     
   </pre>
 

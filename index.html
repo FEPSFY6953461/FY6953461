@@ -153,17 +153,17 @@
      <hr></hr>
 
     
-    This study shows several limitations. The table only has training data obtained from a single centre, meaning it lacks external validation from other hospitals. The number of rare tumours was 
-    relatively lower in the training data set which might have caused some bias in the model’s performance. For example, in unseen data sets, most of its decisions will be based on the observations recorded
-    in the training data set. Using other MRI views and adding more patient information could help improve its accuracy. In the future, this system could also be developed to assist with treatment planning 
-    and predicting patient outcomes.
+    This study shows several limitations. The table only has training data obtained from a single centre, meaning it lacks external validation from other hospitals. 
+    The number of rare tumours was relatively lower in the training data set which might have caused some bias in the model’s performance. For example, in unseen data sets, most of 
+    its decisions will be based on the observations recorded in the training data set. Using other MRI views and adding more patient information could help improve its accuracy. 
+    In the future, this system could also be developed to assist with treatment planning and predicting patient outcomes.
 
     <b>2.2 Model Interpretability and clinical trust</b>
       
-    There are two main ways in which neural networks make decisions in medical imaging. The first uses attribution-based methods which are flexible with any model. They help show which parts of an MRI/CT image have 
-    influenced the model’s prediction and classification. For example, if a neural network predicts that a scan shows a tumour, specific regions of the image are highlighted which contributed to the decision.
-    An importance value is assigned to each region of pixels. Red or warm colours show pixels that strongly support the model’s decision whereas blue or cool colours show pixels that oppose or decrease confidence 
-    in the prediction. This is shown in Figure 1;
+    There are two main ways in which neural networks make decisions in medical imaging. The first uses attribution-based methods which are flexible with any model. They help show which 
+    parts of an MRI/CT image have influenced the model’s prediction and classification. For example, if a neural network predicts that a scan shows a tumour, specific regions of the image 
+    are highlighted which contributed to the decision. An importance value is assigned to each region of pixels. Red or warm colours show pixels that strongly support the model’s decision 
+    whereas blue or cool colours show pixels that oppose or decrease confidence in the prediction. This is shown in Figure 1;
 
     <hr></hr>
 
@@ -177,30 +177,32 @@
 
      <hr></hr>
 
-    CNNs have proved to be very effective for a variety of medical diagnostic tasks, even sometimes outperforming healthcare professionals. However, the black-box nature has dulled their clinical use. 
-    The black box nature of AI refers to systems that have hidden internal decision making processes which are difficult to understand. This raises concerns about trust, fairness and accountability. 
-    A peer-reviewed Journal of Imaging stresses that a medical diagnosis system needs to be ‘transparent, understandable and explainable to gain the trust of physicians, regulators and most importantly patients’
-    (Singh, Sengupta and Lakshminarayanan, 2020)
+    CNNs have proved to be very effective for a variety of medical diagnostic tasks, even sometimes outperforming healthcare professionals. However, the black-box nature has dulled 
+    their clinical use. The black box nature of AI refers to systems that have hidden internal decision making processes which are difficult to understand. This raises concerns about 
+    trust, fairness and accountability. A peer-reviewed Journal of Imaging stresses that a medical diagnosis system needs to be ‘transparent, understandable and explainable to gain 
+    the trust of physicians, regulators and most importantly patients’ (Singh, Sengupta and Lakshminarayanan, 2020)
 
     <b>2.3 Poor Generalisation</b>
     
-    Several studies have shown that CNNs tend to perform well on one dataset from one hospital, but as soon as sites are exchanged they perform much worse when tested on new data from a different hospital. 
-    More caution should be overlooked on small, private datasets as ‘they fail to generalise beyond a single institution or MRI scanner’(Dorfner et al., 2025). This results in unintended bias or spontaneous 
-    correlation in the training data. The performance of the model ‘declines dramatically when directly applied to samples from another unknown hospital’(Lu et al., 2022).
-    Poor generalisation typically arises because the model is trained on a limited domain without the full representation of the clinical variability, lacking rigorous external validation. An example of this 
-    is image variability where tumours differ in size, shape and location. As well as narrow datasets, which means that training on a few images limits the knowledge of patterns the model recognises.
+    Several studies have shown that CNNs tend to perform well on one dataset from one hospital, but as soon as sites are exchanged they perform much worse when tested on new data from 
+    a different hospital. More caution should be overlooked on small, private datasets as ‘they fail to generalise beyond a single institution or MRI scanner’(Dorfner et al., 2025). 
+    This results in unintended bias or spontaneous correlation in the training data. The performance of the model ‘declines dramatically when directly applied to samples from another 
+    unknown hospital’(Lu et al., 2022). Poor generalisation typically arises because the model is trained on a limited domain without the full representation of the clinical variability, 
+    lacking rigorous external validation. An example of this is image variability where tumours differ in size, shape and location. As well as narrow datasets, which means that training on 
+    a few images limits the knowledge of patterns the model recognises.
 
-    Moving forward, techniques should be adjusted to enhance domain adaptation. This helps models adjust more easily when new scanners or hospitals are different from the training data - more variety helps the 
-    model learn patterns that work everywhere.
+    Moving forward, techniques should be adjusted to enhance domain adaptation. This helps models adjust more easily when new scanners or hospitals are different from the training data 
+    - more variety helps the model learn patterns that work everywhere.
 
 
     <b>2.4 Ethical and Practical Issues</b>
 
-    CNNs for brain tumour diagnosis face ethical issues like bias and misdiagnosis in algorithms. If these algorithms are developed on datasets that are under- or over-representative population subgroups, they may 
-    present bias when deployed in clinical practice, ‘leading to unequal access to care and potential harm to patients’(Khosravi and Schweitzer, 2023). This can be demonstrated through a dataset containing mostly adults, 
-    from which the model may misdiagnose children leading to potential harm.
+    CNNs for brain tumour diagnosis face ethical issues like bias and misdiagnosis in algorithms. If these algorithms are developed on datasets that are under- or over-representative 
+    population subgroups, they may present bias when deployed in clinical practice, ‘leading to unequal access to care and potential harm to patients’(Khosravi and Schweitzer, 2023). 
+    This can be demonstrated through a dataset containing mostly adults, from which the model may misdiagnose children leading to potential harm.
 
-    This leads to slow clinical approval and introduces more boundaries to deep learning methods. This unfairness undermines clinical trust. More examples of ethical and practical issues are listed below:
+    This leads to slow clinical approval and introduces more boundaries to deep learning methods. This unfairness undermines clinical trust. More examples of ethical and 
+    practical issues are listed below:
 
     <table>
 
@@ -234,46 +236,50 @@
     
      <hr></hr>
     
-    Alshomrani, F. (2025). Challenges and Advances in Classifying Brain Tumors: An Overview of Machine, Deep Learning, and Hybrid Approaches with Future Perspectives in Medical Imaging. 
-    Current Medical Imaging Formerly Current Medical Imaging Reviews, 21. doi:https://doi.org/10.2174/0115734056365191250602124819.
+    Alshomrani, F. (2025). Challenges and Advances in Classifying Brain Tumors: An Overview of Machine, Deep Learning, and Hybrid Approaches with Future Perspectives 
+    in Medical Imaging. Current Medical Imaging Formerly Current Medical Imaging Reviews, 21. doi:https://doi.org/10.2174/0115734056365191250602124819.
 
      <hr></hr>
     
-    Bouhafra, S. and Bahi, H.E. (2024). Deep Learning Approaches for Brain Tumor Detection and Classification Using MRI Images (2020 to 2024): A Systematic Review. Deleted Journal. 
+    Bouhafra, S. and Bahi, H.E. (2024). Deep Learning Approaches for Brain Tumor Detection and Classification Using MRI Images (2020 to 2024): A Systematic Review. 
     doi:https://doi.org/10.1007/s10278-024-01283-8.
 
      <hr></hr>
    
-    Dorfner, F.J., Patel, J.B., Kalpathy-Cramer, J., Gerstner, E.R. and Bridge, C.P. (2025). A review of deep learning for brain tumor analysis in MRI. npj Precision Oncology, [online] 9(1). 
-    doi:https://doi.org/10.1038/s41698-024-00789-2.
+    Dorfner, F.J., Patel, J.B., Kalpathy-Cramer, J., Gerstner, E.R. and Bridge, C.P. (2025). A review of deep learning for brain tumor analysis in MRI. npj 
+    Precision Oncology, [online] 9(1). doi:https://doi.org/10.1038/s41698-024-00789-2.
 
      <hr></hr>
     
-    Gao, P., Shan, W., Guo, Y., Wang, Y., Sun, R., Cai, J., Li, H., Chan, W.S., Liu, P., Yi, L., Zhang, S., Li, W., Jiang, T., He, K. and Wu, Z. (2022). Development and Validation of a Deep Learning Model 
-    for Brain Tumor Diagnosis and Classification Using Magnetic Resonance Imaging. JAMA Network Open, [online] 5(8), pp.e2225608–e2225608. doi:https://doi.org/10.1001/jamanetworkopen.2022.25608.
+    Gao, P., Shan, W., Guo, Y., Wang, Y., Sun, R., Cai, J., Li, H., Chan, W.S., Liu, P., Yi, L., Zhang, S., Li, W., Jiang, T., He, K. and Wu, Z. (2022). Development 
+    and Validation of a Deep Learning Model for Brain Tumor Diagnosis and Classification Using Magnetic Resonance Imaging. JAMA Network Open, [online] 5(8), 
+    pp.e2225608–e2225608. doi:https://doi.org/10.1001/jamanetworkopen.2022.25608.
 
      <hr></hr>
     
-    Huff, D.T., Weisman, A.J. and Jeraj, R. (2021). Interpretation and visualization techniques for deep learning models in medical imaging. Physics in Medicine & Biology, [online] 66(4), p.04TR01. 
-    doi:https://doi.org/10.1088/1361-6560/abcd17.
+    Huff, D.T., Weisman, A.J. and Jeraj, R. (2021). Interpretation and visualization techniques for deep learning models in medical imaging. Physics in Medicine & Biology, 
+    [online] 66(4), p.04TR01. doi:https://doi.org/10.1088/1361-6560/abcd17.
 
      <hr></hr>
     
-    Khosravi, P. and Schweitzer, M.E. (2023). Artificial intelligence in neuroradiology: a scoping review of some ethical challenges. Frontiers in radiology, 3. doi:https://doi.org/10.3389/fradi.2023.1149461.
+    Khosravi, P. and Schweitzer, M.E. (2023). Artificial intelligence in neuroradiology: a scoping review of some ethical challenges. Frontiers in radiology, 3. 
+    doi:https://doi.org/10.3389/fradi.2023.1149461.
 
      <hr></hr>
     
-    Lu, B., Li, H., Chang, Z.-K., Li, L., Chen, N.-X., Zhu, Z., Zhou, H., Li, X., Wang, Y., Cui, S., Deng, Z., Fan, Z., Yang, H., Chen, X., Thompson, P.M., F. Xavier Castellanos and Chen, Y. (2022). 
-    A practical Alzheimer’s disease classifier via brain imaging-based deep learning on 85,721 samples. Journal of Big Data, 9(1). doi:https://doi.org/10.1186/s40537-022-00650-y.
+    Lu, B., Li, H., Chang, Z.-K., Li, L., Chen, N.-X., Zhu, Z., Zhou, H., Li, X., Wang, Y., Cui, S., Deng, Z., Fan, Z., Yang, H., Chen, X., Thompson, P.M., F. Xavier 
+    Castellanos and Chen, Y. (2022). A practical Alzheimer’s disease classifier via brain imaging-based deep learning on 85,721 samples. Journal of Big Data, 9(1). 
+    doi:https://doi.org/10.1186/s40537-022-00650-y.
 
      <hr></hr>
     
-    Rasool, M., Abdulfatah Noorwali, Hamza Ghandorh, Nor Azman Ismail and Wael M. S. Yafooz (2024). Brain Tumor Classification using Deep Learning: A State-of-the-Art Review. Engineering, 
-    Technology & Applied Science Research, [online] 14(5), pp.16586–16594. doi:https://doi.org/10.48084/etasr.8298.
+    Rasool, M., Abdulfatah Noorwali, Hamza Ghandorh, Nor Azman Ismail and Wael M. S. Yafooz (2024). Brain Tumor Classification using Deep Learning: A State-of-the-Art 
+    Review. Engineering, Technology & Applied Science Research, [online] 14(5), pp.16586–16594. doi:https://doi.org/10.48084/etasr.8298.
 
      <hr></hr>
     
-    Singh, A., Sengupta, S. and Lakshminarayanan, V. (2020). Explainable Deep Learning Models in Medical Image Analysis. Journal of Imaging, 6(6), p.52. doi:https://doi.org/10.3390/jimaging6060052.
+    Singh, A., Sengupta, S. and Lakshminarayanan, V. (2020). Explainable Deep Learning Models in Medical Image Analysis. Journal of Imaging, 6(6), p.52. 
+    doi:https://doi.org/10.3390/jimaging6060052.
   </pre>
 </p>
 </body>

@@ -168,7 +168,44 @@
     Several studies have shown that CNNs tend to perform well on one dataset from one hospital, but as soon as sites are exchanged they perform much worse when tested on new data from a different hospital. More caution should be overlooked on small, private datasets as 
     ‘they fail to generalise beyond a single institution or MRI scanner’(Dorfner et al., 2025). This results in unintended bias or spontaneous correlation in the training data. The performance of the model ‘declines dramatically when directly applied to samples from 
     another unknown hospital’(Lu et al., 2022).
-    Poor generalisation typically arises because the model is trained on a limited domain without the full representation of the clinical variability, lacking rigorous external validation. 
+    Poor generalisation typically arises because the model is trained on a limited domain without the full representation of the clinical variability, lacking rigorous external validation. An example of this is image variability where tumours differ in size, shape and location. 
+    As well as narrow datasets, which means that training on a few images limits the knowledge of patterns the model recognises.
+
+    Moving forward, techniques should be adjusted to enhance domain adaptation. This helps models adjust more easily when new scanners or hospitals are different from the training data - more variety helps the model learn patterns that work everywhere.
+
+
+    <b>2.4 Ethical and Practical Issues</b>
+
+    CNNs for brain tumour diagnosis face ethical issues like bias and misdiagnosis in algorithms. If these algorithms are developed on datasets that are under- or over-representative population subgroups, they may present bias when deployed in clinical practice, 
+    ‘leading to unequal access to care and potential harm to patients’(Khosravi and Schweitzer, 2023). This can be demonstrated through a dataset containing mostly adults, from which the model may misdiagnose children leading to potential harm.
+
+    This leads to slow clinical approval and introduces more boundaries to deep learning methods. This unfairness undermines clinical trust. More examples of ethical and practical issues are listed below:
+
+    <table>
+
+      <tr>
+        <th>Ethical Issues</th>
+        <th>Practical Issues</th>
+      </tr>
+      <tr>
+        <td>AI mistakes - CNNs can confuse tumour types and execute the wrong diagnosis</td>
+        <td>Costly - bulk computing resources are required and it is time consuming to train and run effectively</td>
+      </tr>
+      <tr>
+        <td>Privacy protocol - medical images are sensitive to only individual patient records</td>
+        <td>Integration into hospital staff is difficult - gain trust of clinicians and workers, staff also needs to be trained</td>
+      </tr>
+      <tr>
+        <td>Liability and accountability - if a CNN fails to detect a tumour, it's hard to place responsibility on someone</td>
+        <td>Model variability - hard to build a model which has good generalisation since every MRI scan has different protocols</td>
+      </tr>
+
+      
+    </table>
+
+
+    
+
     
   </pre>
 </body>
